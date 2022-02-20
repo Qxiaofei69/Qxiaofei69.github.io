@@ -1198,7 +1198,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #87ffe9;
+  background: #3eff40;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2524,7 +2524,7 @@ hr {
   display: inline-block;
 }
 body {
-  background: url("/images/2.jpg");
+  background: url("/images/1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -2532,4 +2532,24 @@ body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
+}
+.header-inner {
+  border-radius: 20px 20px 20px 20px;
+  opacity: 0.85;
+}
+.sidebar {
+  border-radius: 10px 10px 10px 10px;
+  transition-duration: 0.4s;
+  opacity: 0.85;
+}
+.post-block {
+  background: var(--content-bg-color);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  padding: 40px;
+}
+.post-block + .post-block {
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  margin-top: 12px;
 }
