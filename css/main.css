@@ -1198,7 +1198,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #a34993;
+  background: #4b4b0a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2524,7 +2524,7 @@ hr {
   display: inline-block;
 }
 body {
-  background: url("./1.jpg");
+  background: url("https://pic3.zhimg.com/v2-1241d5030a7cc43ddc4d9d657fbaade5_r.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
