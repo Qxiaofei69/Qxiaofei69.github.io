@@ -185,12 +185,11 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   margin-bottom: 20px;
   display: flex;
   box-sizing: border-box;
-  flex-direction: row-reverse;
   justify-content: space-between;
 }
 #l_main .l_content {
   flex: 1;
-  margin-left: 15px;
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -867,6 +866,9 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   }
   .header #he-plugin-simple {
     margin-right: 0;
+  }
+  .header .blog-title {
+    margin-left: 150px;
   }
 }
 @media (max-width: 551px) {
