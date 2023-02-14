@@ -379,19 +379,19 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/Qxiaofei_?spm=1000.2115.3001.5343" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;Qxiaofei_?spm&#x3D;1000.2115.3001.5343" rel="noopener" target="_blank">CSDN</a>
+      </span>
+      <span class="links-of-author-item">
         <a href="https://github.com/Qxiaofei69" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Qxiaofei69" rel="noopener" target="_blank">GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://blog.csdn.net/Qxiaofei_?spm=1000.2115.3001.5343" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;Qxiaofei_?spm&#x3D;1000.2115.3001.5343" rel="noopener" target="_blank">CSDN</a>
+        <a href="https://gitee.com/Qdashuai" title="Gitee → https:&#x2F;&#x2F;gitee.com&#x2F;Qdashuai" rel="noopener" target="_blank">Gitee</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://www.zhihu.com/people/bu-neng-shuo-de-mi-mi-94-40-60" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;bu-neng-shuo-de-mi-mi-94-40-60" rel="noopener" target="_blank">知乎</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://space.bilibili.com/499125378?spm_id_from=333.1007.0.0" title="B站 → https:&#x2F;&#x2F;space.bilibili.com&#x2F;499125378?spm_id_from&#x3D;333.1007.0.0" rel="noopener" target="_blank">B站</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://gitee.com/Qdashuai" title="Gitee → https:&#x2F;&#x2F;gitee.com&#x2F;Qdashuai" rel="noopener" target="_blank">Gitee</a>
       </span>
   </div>
 
@@ -550,26 +550,6 @@ window.addEventListener('pjax:success', () => {
 
 
 
-<script data-pjax>
-document.querySelectorAll('.pdfobject-container').forEach(element => {
-  let url = element.dataset.target;
-  let pdfOpenParams = {
-    navpanes : 0,
-    toolbar  : 0,
-    statusbar: 0,
-    pagemode : 'thumbs',
-    view     : 'FitH'
-  };
-  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
-  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
-
-  if (NexT.utils.supportsPDFs()) {
-    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
-  } else {
-    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
-  }
-});
-</script>
 
 
 
